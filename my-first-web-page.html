@@ -21,23 +21,24 @@
         color: rgb(89, 155, 95);
         text-align: center;
         opacity: 0; /* Start with zero opacity */
-        animation: fadeIn 1.25s ease-in-out forwards, changeColor 2s ease-in-out forwards; /* Use the fadeIn animation */
+        animation: fadeIn 1s ease-in-out forwards, changeColor 1s ease-in-out forwards, slideIn 1s ease-out; /* Use the fadeIn animation */
+        font-weight: bold;
 
     }
 
     hr{
-        animation: fadeIn 1.25s ease-in-out forwards, changeColor 2s ease-in-out forwards; /* Use the fadeIn animation */
+        animation: fadeIn 1s ease-in-out forwards, changeColor 1s ease-in-out forwards; /* Use the fadeIn animation */
         color: rgb(89, 155, 95);
         opacity: 0; /* Start with zero opacity */
-        animation-delay: 1.25s;
+        animation-delay: .75s;
     }
 
     h2{
         color: rgb(89, 155, 95);
         text-align: center;
         opacity: 0; /* Start with zero opacity */
-        animation: fadeIn 1.25s ease-in-out forwards, changeColor 2s ease-in-out forwards; /* Use the fadeIn animation */
-        animation-delay: 2.5s;
+        animation: fadeIn 1s ease-in-out forwards, changeColor 1s ease-in-out forwards, slideIn 1s ease-out;; /* Use the fadeIn animation */
+        animation-delay: 1.25s;
     }
 
     @font-face {
@@ -65,6 +66,14 @@
         }
         to {
             color: rgb(89, 155, 95); /* Original Color */
+        }
+    }
+    @keyframes slideIn {
+            0%   { 
+            transform: translateY(200%); 		
+            }
+            50% { 
+            transform: translateY(0%); 
         }
     }
 </style>
